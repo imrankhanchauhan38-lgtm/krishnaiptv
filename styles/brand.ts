@@ -108,7 +108,7 @@ export const brand = {
     },
   ],
   features: [
-    "Access to 8000+ live Indian and international channels",
+    "Access to 10,000+ live Indian and international channels",
     "230+ Hindi TV channels included",
     "Full language coverage: Hindi, Punjabi, Tamil, Telugu, Malayalam, Kannada, Bengali, Gujarati, Marathi, Odia, Urdu, Nepali & more",
     "Pause & rewind feature for live channels",
@@ -119,7 +119,7 @@ export const brand = {
     "24/7 customer support from our dedicated team",
   ],
   channels: {
-    total: "8,000+",
+    total: "10,000+",
     vod: "100,000+",
     languages: ["Hindi", "Punjabi", "Urdu", "Tamil", "Telugu", "Malayalam", "Gujarati", "Bengali", "Kannada", "Marathi", "Odia", "Nepali", "English"],
   },
