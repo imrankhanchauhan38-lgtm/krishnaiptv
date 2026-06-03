@@ -5,22 +5,22 @@ import TrialForm from "./TrialForm";
 
 const slides = [
   {
-    heading: "India's #1 Premium",
-    highlight: "IPTV Service in USA",
-    sub: "Watch 10,000+ Live Indian Channels in crystal clear 4K quality. Hindi, Punjabi, Tamil, Telugu & more — on any device, anywhere.",
+    heading: "Best Indian IPTV Service",
+    highlight: "USA and Canada",
+    sub: "No matter where you go, feel the comfort of home. KrishnaIPTV is more than simply television — it's your link to India's core regions in the USA and Canada.",
     badge: "🔴 Live Now",
   },
   {
-    heading: "Zero Buffering,",
-    highlight: "100% Smooth Streaming",
-    sub: "Our premium servers guarantee 99.9% uptime. No freezing, no buffering — just pure entertainment for your whole family.",
-    badge: "⚡ Ultra Fast",
+    heading: "Enjoy 500+ Channels in Hindi,",
+    highlight: "English, Punjabi & More",
+    sub: "Watch every Indian regional moment to the fullest, without sacrificing anything. All your favorite Indian channels at the most affordable prices.",
+    badge: "⚡ Zero Buffering",
   },
   {
-    heading: "10,000+ Channels",
-    highlight: "One Affordable Plan",
-    sub: "Hindi, Punjabi, Urdu, Tamil, Telugu, Malayalam, English Sports & more. Start with a FREE trial today!",
-    badge: "🎁 Free Trial",
+    heading: "Enjoy Krishna IPTV",
+    highlight: "On Your Existing Device",
+    sub: "Works on Apple products, Smart TVs, Amazon Fire Sticks, and Magboxes. Free installation included. Accept infinite amusement with ease.",
+    badge: "📺 All Devices",
   },
 ];
 
@@ -45,7 +45,6 @@ export default function Hero() {
           overflow: hidden;
           background: #08080f;
         }
-        /* BG Effects */
         .hero-glow1 {
           position: absolute;
           top: 30%;
@@ -74,8 +73,6 @@ export default function Hero() {
           background-size: 60px 60px;
           pointer-events: none;
         }
-
-        /* Right image placeholder */
         .hero-right-box {
           position: absolute;
           right: 0;
@@ -101,15 +98,14 @@ export default function Hero() {
           padding: 24px;
           background: rgba(255,215,0,0.01);
         }
-
-        /* Main content */
         .hero-content {
           position: relative;
           z-index: 10;
           width: 100%;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 40px 24px; padding-top: 180px;
+          padding: 40px 24px;
+          padding-top: 180px;
           display: flex;
           align-items: center;
           min-height: 100vh;
@@ -118,8 +114,6 @@ export default function Hero() {
           max-width: 580px;
           width: 100%;
         }
-
-        /* Badge */
         .hero-badge {
           display: inline-flex;
           align-items: center;
@@ -150,8 +144,6 @@ export default function Hero() {
           letter-spacing: 2.5px;
           text-transform: uppercase;
         }
-
-        /* Heading */
         .hero-h1 {
           font-size: clamp(2.4rem, 5vw, 4rem);
           font-weight: 900;
@@ -166,8 +158,6 @@ export default function Hero() {
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
-
-        /* Sub */
         .hero-sub {
           color: #9ca3af;
           font-size: 1.05rem;
@@ -175,8 +165,6 @@ export default function Hero() {
           margin-bottom: 36px;
           max-width: 480px;
         }
-
-        /* Slider dots */
         .hero-dots {
           display: flex;
           gap: 8px;
@@ -194,8 +182,6 @@ export default function Hero() {
           background: #FFD700;
           box-shadow: 0 0 8px rgba(255,215,0,0.4);
         }
-
-        /* Buttons */
         .hero-btns {
           display: flex;
           gap: 14px;
@@ -237,8 +223,6 @@ export default function Hero() {
           background: rgba(255,215,0,0.08);
           border-color: #FFD700;
         }
-
-        /* Stats */
         .hero-stats {
           display: flex;
           flex-wrap: wrap;
@@ -273,8 +257,6 @@ export default function Hero() {
           text-transform: uppercase;
           letter-spacing: 1px;
         }
-
-        /* Slider nav */
         .hero-slider-dots {
           position: absolute;
           bottom: 32px;
@@ -295,16 +277,15 @@ export default function Hero() {
         .hero-slider-dot.active {
           background: #FFD700;
         }
-
-        /* Mobile */
         @media (max-width: 900px) {
           .hero-right-box { display: none; }
-          .hero-content { min-height: auto; padding: 32px 20px 80px; }
+          .hero-content { min-height: auto; padding: 32px 20px 80px; padding-top: 160px; }
           .hero-left { max-width: 100%; }
-          .hero-wrap { min-height: auto; padding-top: 20px; }
+          .hero-wrap { min-height: auto; }
         }
         @media (max-width: 600px) {
-          .hero-h1 { font-size: 2.2rem; }
+          .hero-h1 { font-size: 2rem; }
+          .hero-sub { font-size: 0.95rem; }
           .hero-btns { flex-direction: column; }
           .hero-btn-primary, .hero-btn-secondary {
             width: 100%;
@@ -318,11 +299,11 @@ export default function Hero() {
             margin-right: 0;
             min-width: 45%;
           }
+          .hero-content { padding-top: 140px; }
         }
       `}</style>
 
       <section className="hero-wrap">
-        {/* BG */}
         <div className="hero-glow1" />
         <div className="hero-glow2" />
         <div className="hero-grid-bg" />
